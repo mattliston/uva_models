@@ -178,7 +178,7 @@ if args.model=='lstm':
                      validation_data=(test_data, test_label))
 
     model.save('saved/uva_padova_lstmv2.h5')
-    json.dump(lstm.history, open('saved_models/uva_padova_lstm_historyv2', 'w'))
+    json.dump(lstm.history, open('saved/uva_padova_lstm_historyv2', 'w'))
 
 
 elif args.model=='crnn':
@@ -221,7 +221,7 @@ elif args.model=='crnn':
                      validation_data=(test_data, test_label))
 
     model.save('saved/uva_padova_crnnv2.h5')
-    json.dump(crnn.history, open('saved_models/uva_padova_crnn_historyv2', 'w'))
+    json.dump(crnn.history, open('saved/uva_padova_crnn_historyv2', 'w'))
 
 
 elif args.model=='bilstm':
@@ -260,7 +260,7 @@ elif args.model=='bilstm':
                      validation_data=(test_data, test_label))
 
     model.save('saved/uva_padova_bilstmv2.h5')
-    json.dump(bilstm.history, open('saved_models/uva_padova_bilstm_historyv2', 'w'))
+    json.dump(bilstm.history, open('saved/uva_padova_bilstm_historyv2', 'w'))
 
 else:
 
